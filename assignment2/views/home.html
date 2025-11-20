@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script>
+    window.SUBMITTER_NAME = "<%= submitter %>";
+  </script>
+  <script type="module" src="/javascripts/home.js"></script>
+</head>
+<body>
+  <h2>HOME</h2>
+  <p>로그인한 ID: <b id="who"></b></p>
+  <p>제출자: <b id="submitter"></b></p>
+  <button id="btn-logout">로그아웃</button>
+</body>
+</html>

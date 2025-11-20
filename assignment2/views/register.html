@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script type="module" src="/javascripts/register.js"></script>
+</head>
+<body>
+  <h1>Register</h1>
+  <form id="regForm">
+    <p>
+      <label for="realname">이름</label><br>
+      <input id="realname" required>
+    </p>
+    <p>
+      <label for="reg-id">ID</label><br>
+      <input id="reg-id" required>
+      <button id="btn-id-check" type="button">중복ID체크</button>
+      <span id="id-msg"></span>
+    </p>
+    <p>
+      <label for="pw1">PW1</label><br>
+      <input id="pw1" type="password" required>
+    </p>
+    <p>
+      <label for="pw2">PW2</label><br>
+      <input id="pw2" type="password" required>
+      <br><span id="pw-msg"></span>
+    </p>
+    <button id="btn-submit" type="submit" disabled>회원가입</button>
+  </form>
+  <p><a href="/login">로그인</a></p>
+</body>
+</html>

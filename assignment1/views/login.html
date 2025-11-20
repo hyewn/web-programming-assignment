@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <h1>Login</h1>
+  
+  <p class="err"><%= typeof error !== 'undefined' ? error : '' %></p>
+
+  <form method="post" action="/login">
+    <p>
+      <label for="id">ID</label><br>
+      <input id="id" name="id" required>
+    </p>
+    <p>
+      <label for="pw">PW</label><br>
+      <input id="pw" type="password" name="pw" required>
+    </p>
+    <button type="submit">로그인</button>
+  </form>
+
+  <p><a href="/register">회원가입</a></p>
+</body>
+</html>
